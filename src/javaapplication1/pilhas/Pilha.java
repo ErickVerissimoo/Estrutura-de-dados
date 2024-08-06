@@ -38,6 +38,7 @@ public class Pilha {
         System.out.println(pilha.pop());
         System.out.print(pilha);
         System.out.print(pilha.search("abacaxi"));
+  
     }
 
 }

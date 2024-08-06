@@ -16,7 +16,7 @@ public class Palindromo {
     public static void main(String[] args) {
    Scanner entrada = new Scanner (System.in);
         System.out.println("Entre com uma palavra:");
-        String palavra = entrada.nextLine();
+        String palavra = entrada.next();
         char [] comparaction = new char [palavra.toCharArray().length]; 
         int auxiliar =0;
         for(int i = palavra.length() - 1; i>=0; i--){
