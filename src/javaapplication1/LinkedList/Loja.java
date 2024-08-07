@@ -5,12 +5,17 @@
 package javaapplication1.LinkedList;
 import java.util.*;
 /**
- *
+ * 
+ * 
  * @author Erick
  */
-public class ListaCompras {
+public class Loja {
     public static void main(String[] args) {
+      
         Scanner entrada = new Scanner(System.in);
-        LinkedList <produtoComprado> Carrinho = new LinkedList<>(); 
+        Carrinho carrinho = new Carrinho();
+        carrinho.AdicionarProduto();
+        System.out.println(carrinho);
+       
     }
 }

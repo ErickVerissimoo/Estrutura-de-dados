@@ -5,16 +5,40 @@
 package javaapplication1.LinkedList;
 import java.util.LinkedList;
 /**
- *
+ * 
  * @author Erick
  */
 public class Carrinho {
-    Produto produto;
-    double ValorTotal;
-    LinkedList <Produto> produtos = new LinkedList<>();
+    private Produto produto;
     
-    @FunctionalInterface
-    interface Adicionar{
-        void Add();
+    public int getTotal_items() {
+        return Total_items;
+    }
+    private double ValorTotal = 0;
+    private int Total_items = 0;
+    private LinkedList <Produto> produtos = new LinkedList<>();
+    public Produto getProduto() {
+        return produto;
+    }
+
+    public double getValorTotal() {
+        return ValorTotal;
+    }
+
+    public LinkedList<Produto> getProdutos() {
+        return produtos;
+    }
+   
+    
+    public void AdicionarProduto(){
+        this.getProdutos().add(produtoVenda.ComprarProduto());
+        this.ValorTotal += this.getProdutos().getLast().getValor();
+        this.Total_items++;
+    }
+    
+    @Override
+    public String toString(){
+        return "O valor total da compra está em: " + this.getValorTotal()
+                + "O total de items está em: " + this.getTotal_items();
     }
 }

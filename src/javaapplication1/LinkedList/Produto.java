@@ -4,8 +4,6 @@
  */
 package javaapplication1.LinkedList;
 
-import java.util.Date;
-
 /**
  *
  * @author Erick
@@ -14,9 +12,33 @@ public abstract class Produto {
     private String nome;
     private double valor;
     private boolean perecivel;
-    private long id;
+    private int id;
     private String descricao;
     private int itensComprados;
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    public void setPerecivel(boolean perecivel) {
+        this.perecivel = perecivel;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public void setItensComprados(int itensComprados) {
+        this.itensComprados = itensComprados;
+    }
 
  
 
@@ -34,7 +56,7 @@ public abstract class Produto {
         return perecivel;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
@@ -46,7 +68,7 @@ public abstract class Produto {
         return itensComprados;
     }
     
-       public Produto(String nome, double valor, boolean perecivel, long id, String descricao, int itensComprados) {
+       public Produto(String nome, double valor, boolean perecivel, int id, String descricao, int itensComprados) {
         this.nome = nome;
         this.valor = valor;
         this.perecivel = perecivel;
@@ -54,5 +76,5 @@ public abstract class Produto {
         this.descricao = descricao;
         this.itensComprados = itensComprados;
     }
-       
+       protected abstract boolean aplicarDesconto (double porcentagem);
 }
