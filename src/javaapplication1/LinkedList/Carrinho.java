@@ -31,14 +31,14 @@ public class Carrinho {
    
     
     public void AdicionarProduto(){
-        this.getProdutos().add(produtoVenda.ComprarProduto());
+        this.getProdutos().add(produtoVenda.CadastrarProduto());
         this.ValorTotal += this.getProdutos().getLast().getValor();
         this.Total_items++;
     }
     
     @Override
     public String toString(){
-        return "O valor total da compra está em: " + this.getValorTotal()
-                + "O total de items está em: " + this.getTotal_items();
+        return "\n\tO valor total da compra está em: " + this.getValorTotal()
+                + "\n\tO total de items está em: " + this.getTotal_items();
     }
 }

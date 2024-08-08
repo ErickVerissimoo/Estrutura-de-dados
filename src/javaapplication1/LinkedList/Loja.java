@@ -9,8 +9,9 @@ import java.util.*;
  * 
  * @author Erick
  */
-public class Loja {
-    public static void main(String[] args) {
+public abstract class Loja extends loja{
+
+    public static void main(String... args) {
       
         Scanner entrada = new Scanner(System.in);
         Carrinho carrinho = new Carrinho();
@@ -18,4 +19,6 @@ public class Loja {
         System.out.println(carrinho);
        
     }
+    
+  
 }

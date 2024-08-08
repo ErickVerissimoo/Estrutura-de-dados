@@ -16,7 +16,7 @@ public class produtoVenda extends Produto{
         super(nome, valor, perecivel, id, descricao, itensComprados);
     }
     
-    public static Produto ComprarProduto(){
+    public static Produto CadastrarProduto(){
         boolean ePerecivel;
         Scanner entrada = new Scanner (System.in);
         System.out.print("\n\tEntre com o nome do produto: ");
@@ -31,7 +31,7 @@ public class produtoVenda extends Produto{
         System.out.print("\n\tEntre com a descricao do produto: ");
         entrada.nextLine();
         String descricao = entrada.nextLine();
-        System.out.print("\n\tEntre com a quantidade de items comprados: ");
+        System.out.print("\n\tEntre com a quantidade de items em estoque: ");
         int items = entrada.nextInt();
         return new produtoVenda(nome, valor, ePerecivel, id, descricao, items);
     }

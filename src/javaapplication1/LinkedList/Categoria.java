@@ -12,5 +12,7 @@ public enum Categoria {
     LIMPEZA,
     ALIMENTICIO,
     AUTOMOBILISTICO,
-    
+    INFANTIL,
+    MATINAL,
+    FITNESS;
 }
