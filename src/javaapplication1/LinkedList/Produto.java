@@ -15,6 +15,15 @@ public abstract class Produto {
     private int id;
     private String descricao;
     private int itensComprados;
+    private Cupons cupom;
+
+    public Cupons getCupom() {
+        return cupom;
+    }
+
+    public void setCupom(Cupons cupom) {
+        this.cupom = cupom;
+    }
 
     public void setNome(String nome) {
         this.nome = nome;

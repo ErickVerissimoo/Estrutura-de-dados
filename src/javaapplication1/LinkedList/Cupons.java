@@ -10,6 +10,8 @@ import java.util.Set;
  *
  * @author Erick
  */
-public class Cupons {
-    
+public enum Cupons {
+    CUP1,
+    CUP2,
+    CUP3;
 }
